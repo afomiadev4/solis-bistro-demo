@@ -19,18 +19,40 @@
 <body class="bg-[#FCFAFA] font-sans text-warm-wood pt-32">
 
     <nav
-        class="fixed top-0 w-full z-50 bg-[#FCFAFA]/90 backdrop-blur-md py-6 px-10 flex justify-between items-center border-b border-gray-100">
-        <div class="text-2xl font-display font-bold italic tracking-tight"><a href="index.html">Solis <span
-                    class="text-clay">Bistro.</span></a></div>
+        class="fixed top-0 w-full z-[100] bg-[#FCFAFA]/95 backdrop-blur-md py-4 md:py-6 px-6 md:px-10 flex justify-between items-center border-b border-gray-100">
+        <div class="text-xl md:text-2xl font-display font-bold italic tracking-tight">
+            <a href="index.html">Solis <span class="text-clay">Bistro.</span></a>
+        </div>
+
         <div class="hidden md:flex space-x-10 text-[11px] uppercase tracking-[0.2em] font-semibold text-gray-500">
             <a href="index.html" class="hover:text-clay transition">Home</a>
             <a href="menu.html" class="hover:text-clay transition">Menu</a>
+            <a href="gallery.html" class="hover:text-clay transition">Gallery</a>
             <a href="about.html" class="hover:text-clay transition">Our Story</a>
-            <a href="contact.html" class="text-clay">Visit</a>
+            <a href="contact.html" class="hover:text-clay transition">Visit</a>
         </div>
+
+        <div class="md:hidden">
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-warm-wood">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
         <a href="tel:+251911223344"
-            class="border border-warm-wood px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-warm-wood hover:text-white transition">Call
+            class="hidden md:block border border-warm-wood px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-warm-wood hover:text-white transition">Call
             Table</a>
+
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 flex flex-col p-6 space-y-4 text-xs uppercase tracking-widest font-bold md:hidden">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">Story</a>
+            <a href="contact.html">Visit</a>
+        </div>
     </nav>
 
     <main class="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-20">
