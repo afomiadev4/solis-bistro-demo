@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solis Bistro | Cafe & Kitchen Addis</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warm_wood: '#2C1B18',
+                        clay: '#D97706',
+                    },
+                    fontFamily: {
+                        display: [ 'Cormorant Garamond', 'serif' ],
+                        sans: [ 'Inter', 'sans-serif' ],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#FCFAFA] font-sans text-warm_wood">
+    <nav
+        class="fixed w-full z-50 bg-[#FCFAFA]/90 backdrop-blur-md py-6 px-10 flex justify-between items-center border-b border-gray-100">
+        <div class="text-2xl font-display font-bold italic tracking-tight">Solis <span class="text-clay">Bistro.</span>
+        </div>
+        <div class="hidden md:flex space-x-10 text-[11px] uppercase tracking-[0.2em] font-semibold text-gray-500">
+            <a href="index.html" class="hover:text-clay transition">Home</a>
+            <a href="menu.html"
+                class="hover:text-clay transition border-b border-transparent hover:border-clay">Menu</a>
+            <a href="about.html" class="hover:text-clay transition border-b border-transparent hover:border-clay">Our
+                Story</a>
+            <a href="contact.html"
+                class="hover:text-clay transition border-b border-transparent hover:border-clay">Visit</a>
+        </div>
+        <a href="tel:+251911223344"
+            class="border border-warm_wood px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-warm_wood hover:text-white transition">Call
+            Table</a>
+    </nav>
+
+    <section id="menu" class="py-24 px-6 bg-[#FCFAFA]">
+        <div class="max-w-5xl mx-auto">
+
+            <div class="text-center mb-20">
+                <h2 class="font-display text-5xl md:text-6xl italic mb-4">Our Menu</h2>
+                <p class="text-gray-400 uppercase tracking-[0.3em] text-[10px] font-bold">Sourced locally. Crafted with
+                    love.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+
+                <div>
+                    <h3 class="font-display text-3xl italic mb-10 border-b border-gray-100 pb-4 text-clay">Morning Brew
+                    </h3>
+
+                    <div class="space-y-8">
+                        <div class="flex justify-between items-end group cursor-default">
+                            <div>
+                                <h4
+                                    class="font-semibold text-warm-wood uppercase text-xs tracking-widest group-hover:text-clay transition">
+                                    Traditional Macchiato</h4>
+                                <p class="text-[11px] text-gray-400 italic font-light mt-1">Ethiopian Arabica, steamed
+                                    milk, double shot.</p>
+                            </div>
+                            <span class="text-sm font-display italic text-gray-500">80 ETB</span>
+                        </div>
+
+                        <div class="flex justify-between items-end group cursor-default">
+                            <div>
+                                <h4
+                                    class="font-semibold text-warm-wood uppercase text-xs tracking-widest group-hover:text-clay transition">
+                                    Single Origin Pour-over</h4>
+                                <p class="text-[11px] text-gray-400 italic font-light mt-1">Yirgacheffe or Sidama beans,
+                                    hand-crafted.</p>
+                            </div>
+                            <span class="text-sm font-display italic text-gray-500">120 ETB</span>
+                        </div>
+
+                        <div class="flex justify-between items-end group cursor-default">
+                            <div>
+                                <h4
+                                    class="font-semibold text-warm-wood uppercase text-xs tracking-widest group-hover:text-clay transition">
+                                    House Cold Brew</h4>
+                                <p class="text-[11px] text-gray-400 italic font-light mt-1">12-hour steeped, smooth and
+                                    refreshing.</p>
+                            </div>
+                            <span class="text-sm font-display italic text-gray-500">150 ETB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-3xl italic mb-10 border-b border-gray-100 pb-4 text-clay">All Day
+                        Dining</h3>
+
+                    <div class="space-y-8">
+                        <div class="flex justify-between items-end group cursor-default">
+                            <div>
+                                <h4
+                                    class="font-semibold text-warm-wood uppercase text-xs tracking-widest group-hover:text-clay transition">
+                                    Avocado Sourdough</h4>
+                                <p class="text-[11px] text-gray-400 italic font-light mt-1">Smashed avocado, feta, chili
+                                    flakes, local honey.</p>
+                            </div>
+                            <span class="text-sm font-display italic text-gray-500">450 ETB</span>
+                        </div>
+
+                        <div class="flex justify-between items-end group cursor-default">
+                            <div>
+                                <h4
+                                    class="font-semibold text-warm-wood uppercase text-xs tracking-widest group-hover:text-clay transition">
+                                    Truffle Mushroom Pasta</h4>
+                                <p class="text-[11px] text-gray-400 italic font-light mt-1">Handmade fettuccine, cream
+                                    sauce, local herbs.</p>
+                            </div>
+                            <span class="text-sm font-display italic text-gray-500">850 ETB</span>
+                        </div>
+
+                        <div class="flex justify-between items-end group cursor-default">
+                            <div>
+                                <h4
+                                    class="font-semibold text-warm-wood uppercase text-xs tracking-widest group-hover:text-clay transition">
+                                    Signature Steak Frites</h4>
+                                <p class="text-[11px] text-gray-400 italic font-light mt-1">Premium Ethiopian beef,
+                                    garlic butter, hand-cut fries.</p>
+                            </div>
+                            <span class="text-sm font-display italic text-gray-500">1,200 ETB</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-20 text-center">
+                <a href="https://t.me/YourBot"
+                    class="inline-block bg-warm-wood text-white px-10 py-4 rounded-full text-xs uppercase tracking-widest hover:bg-clay transition-all duration-300">
+                    Order Delivery via Telegram
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
