@@ -4,71 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solis Bistro | Cafe & Kitchen Addis</title>
+    <title>Visit Us | Solis Bistro Addis</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Inter:wght@300;400;600&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        warm_wood: '#2C1B18',
-                        clay: '#D97706',
-                    },
-                    fontFamily: {
-                        display: [ 'Cormorant Garamond', 'serif' ],
-                        sans: [ 'Inter', 'sans-serif' ],
-                    }
-                }
-            }
+            theme: { extend: { colors: { 'warm-wood': '#2C1B18', clay: '#D97706' }, fontFamily: { display: [ 'Cormorant Garamond', 'serif' ], sans: [ 'Inter', 'sans-serif' ] } } }
         }
     </script>
 </head>
 
-<body class="bg-[#FCFAFA] font-sans text-warm_wood">
+<body class="bg-[#FCFAFA] font-sans text-warm-wood pt-32">
+
     <nav
-        class="fixed w-full z-50 bg-[#FCFAFA]/90 backdrop-blur-md py-6 px-10 flex justify-between items-center border-b border-gray-100">
-        <div class="text-2xl font-display font-bold italic tracking-tight">Solis <span class="text-clay">Bistro.</span>
-        </div>
+        class="fixed top-0 w-full z-50 bg-[#FCFAFA]/90 backdrop-blur-md py-6 px-10 flex justify-between items-center border-b border-gray-100">
+        <div class="text-2xl font-display font-bold italic tracking-tight"><a href="index.html">Solis <span
+                    class="text-clay">Bistro.</span></a></div>
         <div class="hidden md:flex space-x-10 text-[11px] uppercase tracking-[0.2em] font-semibold text-gray-500">
             <a href="index.html" class="hover:text-clay transition">Home</a>
-            <a href="menu.html"
-                class="hover:text-clay transition border-b border-transparent hover:border-clay">Menu</a>
-            <a href="about.html" class="hover:text-clay transition border-b border-transparent hover:border-clay">Our
-                Story</a>
-            <a href="contact.html"
-                class="hover:text-clay transition border-b border-transparent hover:border-clay">Visit</a>
+            <a href="menu.html" class="hover:text-clay transition">Menu</a>
+            <a href="about.html" class="hover:text-clay transition">Our Story</a>
+            <a href="contact.html" class="text-clay">Visit</a>
         </div>
         <a href="tel:+251911223344"
-            class="border border-warm_wood px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-warm_wood hover:text-white transition">Call
+            class="border border-warm-wood px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-warm-wood hover:text-white transition">Call
             Table</a>
     </nav>
 
-    <section class="relative h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 bg-black/40 z-10"></div>
+    <main class="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-20">
 
-        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=1920"
-            class="absolute inset-0 w-full h-full object-cover z-0" alt="Cafe Interior">
+        <div class="space-y-12">
+            <div>
+                <h1 class="font-display text-6xl italic mb-6 text-warm-wood">Find a Table</h1>
+                <p class="text-gray-500 font-light leading-relaxed max-w-md">
+                    Join us for an unforgettable dining experience in the heart of Bole. For large parties or private
+                    events, please reach out via Telegram.
+                </p>
+            </div>
 
-        <div class="relative z-20 text-center text-white px-4">
-            <h1 class="font-display text-6xl md:text-9xl mb-6 italic leading-none">Freshly Brewed <br> & <span
-                    class="text-clay underline decoration-1 underline-offset-8">Finely Crafted</span></h1>
-            <p class="text-lg md:text-xl font-light mb-10 max-w-xl mx-auto tracking-wide">
-                Experience the art of Ethiopian coffee and modern bistro cuisine in a space designed for connection.
-            </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#menu"
-                    class="bg-clay text-white px-12 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-lg">View
-                    Our Menu</a>
-                <a href="https://t.me/YourBot"
-                    class="bg-white/10 backdrop-blur-md border border-white/40 text-white px-12 py-4 rounded-full font-bold hover:bg-white hover:text-warm_wood transition-all">Order
-                    Online (Telegram)</a>
+            <div class="space-y-8">
+                <div>
+                    <h4 class="text-[10px] uppercase tracking-[0.3em] font-bold text-clay mb-2">Location</h4>
+                    <p class="text-lg font-light">Bole Road, Behind Edna Mall<br>Addis Ababa, Ethiopia</p>
+                </div>
+                <div>
+                    <h4 class="text-[10px] uppercase tracking-[0.3em] font-bold text-clay mb-2">Reservations</h4>
+                    <a href="tel:+251911223344" class="text-2xl font-display italic hover:text-clay transition">+251 91
+                        122 3344</a>
+                </div>
+                <div>
+                    <h4 class="text-[10px] uppercase tracking-[0.3em] font-bold text-clay mb-2">Social</h4>
+                    <div class="flex space-x-6 text-xs uppercase tracking-widest font-semibold mt-4">
+                        <a href="https://t.me/SolisBistro" class="hover:text-clay transition">Telegram</a>
+                        <a href="#" class="hover:text-clay transition">Instagram</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
 
+        <div class="relative h-[500px] bg-gray-100 overflow-hidden rounded-sm group shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&q=80"
+                class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000"
+                alt="Bistro Exterior">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <a href="https://www.google.com/maps" target="_blank"
+                    class="bg-warm-wood text-white px-8 py-4 text-[10px] uppercase tracking-widest hover:bg-clay transition-all">
+                    Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </main>
 
 </body>
 
