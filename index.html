@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solis Bistro | Cafe & Kitchen Addis</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warm_wood: '#2C1B18',
+                        clay: '#D97706',
+                    },
+                    fontFamily: {
+                        display: [ 'Cormorant Garamond', 'serif' ],
+                        sans: [ 'Inter', 'sans-serif' ],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#FCFAFA] font-sans text-warm-wood">
+    <nav
+        class="fixed w-full z-50 bg-[#FCFAFA]/90 backdrop-blur-md py-6 px-10 flex justify-between items-center border-b border-gray-100">
+        <div class="text-2xl font-display font-bold italic tracking-tight">Solis <span class="text-clay">Bistro.</span>
+        </div>
+        <div class="hidden md:flex space-x-10 text-[11px] uppercase tracking-[0.2em] font-semibold text-gray-500">
+            <a href="#menu" class="hover:text-clay transition">Menu</a>
+            <a href="#about" class="hover:text-clay transition">Our Story</a>
+            <a href="#location" class="hover:text-clay transition">Visit</a>
+        </div>
+        <a href="tel:+251911223344"
+            class="border border-warm-wood px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-warm-wood hover:text-white transition">Call
+            Table</a>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=1920"
+            class="absolute inset-0 w-full h-full object-cover z-0" alt="Cafe Interior">
+
+        <div class="relative z-20 text-center text-white px-4">
+            <h1 class="font-display text-6xl md:text-9xl mb-6 italic leading-none">Freshly Brewed <br> & <span
+                    class="text-clay underline decoration-1 underline-offset-8">Finely Crafted</span></h1>
+            <p class="text-lg md:text-xl font-light mb-10 max-w-xl mx-auto tracking-wide">
+                Experience the art of Ethiopian coffee and modern bistro cuisine in a space designed for connection.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#menu"
+                    class="bg-clay text-white px-12 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-lg">View
+                    Our Menu</a>
+                <a href="https://t.me/YourBot"
+                    class="bg-white/10 backdrop-blur-md border border-white/40 text-white px-12 py-4 rounded-full font-bold hover:bg-white hover:text-warm-wood transition-all">Order
+                    Online (Telegram)</a>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
